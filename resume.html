@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<nav>
+<div class=logo><a href="">S.V</a></div><ul><li><a href=index.html>home</a></li>
+<li><a href=aboutme.html>aboutme</a></li>
+<li><a href=resume.html>resume</a></li><li><a href=contact.html>contact</a></li>
+</ul>
+<div class=hb><div class=hb1></div><div class=hb1></div><div class=hb1></div></div>
+</nav>
+
+<div class=name><h2>S.VELAN</h2><P>Emerging Technologist Dedicated to Crafting Innovative Software solution</P></div>
+<div class=div1><div class=education><h2>Education</h2><ul><li>ALAGAPPA UNIVERSITY<P>BSC COMPUTER SCIENCE IN PROGRESS</P></li>
+<li>SYED HAMEEDHA ARTS AND SCIENCE COLLEGE<p>2021-2024</p></li>
+</ul></div>
+<div class=languages><h2>Languages</h2><ul><li>TAMIL(NATIVE)</li><li>ENGLISH</li></ul></div>
+<div class=certifications><h2>Certifications</h2><p>IBM CERTIFICATIONS FOR</p><ul><li>HTML</li><li>CSS</li><li>JAVASCRIPT</li></ul><p>MS EXCEL CERTIFICATION OF MICROSOFT</p></div>
+</div><div class=div2><div class=skills><h2>Skills</h2><ul><li>HTML</li><li>CSS</li><li>JAVASCRIPT</li><li>JAVA</li><li>CPP</li><li>C</li></ul></div>
+<div class=technical><h2>Technical Tools</h2><ul><li>GIT AND GITHUB</li><li>SPREADSHEET</li></ul></div><div class=hobbies><h2>Hobbies</h2><ul><li>MOVIE ENTHUSIAST:<br>Avid watcher with deep appreciation for film history,diverse genres,and story telling techniques</li>
+<li>CHESS PLAYER:<br>Passionate about strategic thinking and honing analytical skills through regular chess gameplay</li>
+</ul></div></div></body>
+<style>
+:root{
+--violet:#C38D9E;
+--cyan:#CAFAFE;
+--red:#FC4445;
+--sandle:#E27D60;
+}
+nav{
+
+display:flex;
+height:50px;
+align-items:center;
+}
+.logo a{
+color:#EEA47F;
+font-weight:bold;
+font-size:1.5em;
+}
+.logo{
+margin-left:20px;
+background-color:var(--cyan);
+border-radius:20px;
+border-style:dashed;
+padding:5px;}
+nav ul{
+list-style:none;
+margin-left:auto;
+margin-right:20px;
+}
+nav ul li{
+display:inline-block;
+margin-right:30px;
+}
+ul li a{
+color:#EEA47F;;
+font-family:calibri;
+}
+.hb{
+width:fit-content;
+display:none;
+cursor:pointer;
+}
+.hb1{
+width:20px;
+height:3px;
+background-color:var(--cyan);
+margin-right:20px;
+margin-top:3px;
+}
+*{
+text-decoration:none;
+margin:0;
+padding:0;
+}
+nav ul li a:hover{
+color:var(--cyan);
+}
+nav ul li a:active{
+color:var(--yellow);
+}
+body{
+background-color:#00539C;}
+.show{
+display:inline-block;}
+
+@media(max-width:600px){
+.hb{
+display:block;
+margin-left:auto;
+}
+nav ul li{
+margin-right:0px;
+margin-left:30px;
+
+}
+nav ul{
+display:none;}}
+h2{
+color:var(--cyan);}
+p{
+color:var(--sandle);
+font-size:10px;
+}
+.content ul{
+margin-top:10px;
+}
+.content{
+padding:30px;}
+.name{
+margin-top:50px;
+margin-left:50px;}
+.name p{
+font-size:10px;}
+ul li{
+color:var(--sandle);
+margin-left:15px;}
+.div1{
+margin-top:40px;
+display:flex;
+justify-content:space-between;
+padding:50px;
+}
+
+.div2{
+display:flex;
+justify-content:space-between;
+padding:50px;}
+.technical{
+margin-right:50px;}
+.div1 h2{margin-bottom:10px;
+}
+.div2 h2{
+margin-bottom:10px;}
+.certifications p{
+font-size:16px;}
+.certifications p{
+margin-top:5px;}
+@media(max-width:600px){
+.div1 div,.div2 div{
+padding:5px;
+}}
+</style>
+<script>
+const menu=document.querySelector('.hb')
+const menulist=document.querySelector('nav ul')
+menu.addEventListener('click',()=>{
+	menulist.classList.toggle('show')
+	
+})</script>
+</html>
