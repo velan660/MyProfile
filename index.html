@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<nav>
+<div class=logo><a href="">S.V</a></div><ul><li><a href=home.html>home</a></li>
+<li><a href=aboutme.html>aboutme</a></li>
+<li><a href=resume.html>resume</a></li><li><a href=contact.html>contact</a></li>
+</ul>
+<div class=hb><div class=hb1></div><div class=hb1></div><div class=hb1></div></div>
+</nav>
+<div class=content><h2>WELCOME TO MY PERSONAL WEBSITE</h2>
+<p>i have added all my educational qualities and skills to this website</p>
+<p>you can check those details through the navigation bar</p>
+<p>contact me with the links that i provided in my contact page</div>
 
+</body>
+<style>
+:root{
+--violet:#C38D9E;
+--cyan:#CAFAFE;
+--red:#FC4445;
+--sandle:#E27D60;
+}
+nav{
+
+display:flex;
+height:50px;
+align-items:center;
+}
+.logo a{
+color:#EEA47F;
+font-weight:bold;
+font-size:1.5em;
+}
+.logo{
+margin-left:20px;
+background-color:var(--cyan);
+border-radius:20px;
+border-style:dashed;
+padding:5px;}
+ul{
+list-style:none;
+margin-left:auto;
+margin-right:20px;
+}
+ul li{
+display:inline-block;
+margin-right:30px;
+}
+ul li a{
+color:#EEA47F;;
+font-family:calibri;
+}
+.hb{
+width:fit-content;
+display:none;
+cursor:pointer;
+}
+.hb1{
+width:20px;
+height:3px;
+background-color:var(--cyan);
+margin-right:20px;
+margin-top:3px;
+}
+*{
+text-decoration:none;
+margin:0;
+padding:0;
+}
+ul li a:hover{
+color:var(--cyan);
+}
+ul li a:active{
+color:var(--yellow);
+}
+body{
+background-color:#00539C;
+}
+.content{
+margin-top:10px;
+height:100vh;
+padding:20px;
+display:flex;
+flex-direction:column;
+align-items:center;}
+.content p{
+color:var(--cyan);
+margin-top:50px;
+border-radius:10px;
+text-align:center;
+width:fit-content;
+font-weight:bold;}
+h2{
+color:#EEA47F;
+margin-top:50px;
+font-family:courier new;
+}
+.img{margin-top:50px;
+margin-left:20px;
+float:left;
+}
+.show{
+display:inline-block;}
+
+@media(max-width:600px){
+.hb{
+display:block;
+margin-left:auto;
+}
+.img img{
+width:200px;
+height:300px;}
+ul{
+display:none;}
+
+ul li{
+margin-right:0px;
+margin-left:30px;
+
+}
+
+
+</style>
+<script>
+const menu=document.querySelector('.hb')
+const menulist=document.querySelector('ul')
+menu.addEventListener('click',()=>{
+	menulist.classList.toggle('show')
+	
+})</script>
+</html>
