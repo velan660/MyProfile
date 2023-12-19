@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<nav>
+<div class=logo><a href="">S.V</a></div><ul><li><a href=index.html>home</a></li>
+<li><a href=aboutme.html>aboutme</a></li>
+<li><a href=resume.html>resume</a></li><li><a href=contact.html>contact</a></li>
+</ul>
+<div class=hb><div class=hb1></div><div class=hb1></div><div class=hb1></div></div>
+</nav>
+<img src=velan.jpeg alt=velan width=250 height=300>
+<div class=content><h2>ABOUT MYSELF</h2>
+<p>Hey there, I'm Velan, a proud resident of the tranquil village of Pooseri in Ramanathapuram. Having completed my higher secondary education at Rowther Sahib Higher Secondary School, I'm currently navigating the exciting journey of undergraduate studies at Syed Hameedha College.</p>
+<p>My pursuit of knowledge is a key aspect of my life at Syed Hameedha arts and science College,Kilakarai, where each day unfolds new opportunities for intellectual growth and personal development.</p>
+<p>Chess Passion
+Beyond the academic realm, I find joy and strategic fulfillment on the chessboard. Zonal level competitions have been both a challenge and a source of accomplishment, marked by certificates that reflect my dedication to the game.
+</p><p>Leisure Pursuits
+Movies and books are my cherished escapes. Whether it's the magic of cinema or the immersive experience of a good book, these hobbies provide a delightful balance to my life.
+</p><p>Coding Journey
+Fueled by curiosity and a love for technology, I'm on a learning journey in the world of coding. It's a realm of problem-solving and creativity that I find endlessly fascinating.
+</p><p>Personal Interests
+In addition to my academic pursuits and hobbies,Chess,books  and movies contribute to the tapestry of my life.
+</p><p>Let's Connect
+If you share a passion for chess, tech, or simply want to discuss favorite movies and books, I'd love to connect. Reach out to me <a href=contact.html>contact</a>.
+</p>
+<p>Thanks for getting to know a bit about me. I'm on a journey of discovery, embracing diverse experiences and eagerly looking forward to what lies ahead.</p></div>
+
+</body>
+<style>
+:root{
+--violet:#C38D9E;
+--cyan:#CAFAFE;
+--red:#FC4445;
+--sandle:#E27D60;
+}
+nav{
+
+display:flex;
+height:50px;
+align-items:center;
+}
+.logo a{
+color:#EEA47F;
+font-weight:bold;
+font-size:1.5em;
+}
+.logo{
+margin-left:20px;
+background-color:var(--cyan);
+border-radius:20px;
+border-style:dashed;
+padding:5px;}
+ul{
+list-style:none;
+margin-left:auto;
+margin-right:20px;
+}
+ul li{
+display:inline-block;
+margin-right:30px;
+}
+ul li a{
+color:#EEA47F;;
+font-family:calibri;
+}
+.hb{
+width:fit-content;
+display:none;
+cursor:pointer;
+}
+.hb1{
+width:20px;
+height:3px;
+background-color:var(--cyan);
+margin-right:20px;
+margin-top:3px;
+}
+*{
+text-decoration:none;
+margin:0;
+padding:0;
+}
+ul li a:hover{
+color:var(--cyan);
+}
+ul li a:active{
+color:var(--yellow);
+}
+body{
+background-color:#00539C;
+}
+.content{
+margin-top:10px;
+height:100vh;
+padding:20px;
+display:flex;
+flex-direction:column;
+align-items:center;}
+.content p{
+color:var(--cyan);
+margin-top:50px;
+border-radius:10px;
+text-align:center;
+width:fit-content;
+font-weight:bold;}
+h2{
+color:#EEA47F;
+margin-top:50px;
+font-family:courier new;
+}
+img{margin-top:150px;
+margin-left:20px;
+float:left;
+position:sticky;
+top:0;
+}
+.show{
+display:inline-block;}
+
+@media(max-width:600px){
+.hb{
+display:block;
+margin-left:auto;
+}
+img{
+width:200px;
+height:300px;
+}
+ul{
+display:none;}
+
+ul li{
+margin-right:0px;
+margin-left:30px;
+
+}
+
+
+</style>
+<script>
+const menu=document.querySelector('.hb')
+const menulist=document.querySelector('ul')
+menu.addEventListener('click',()=>{
+	menulist.classList.toggle('show')
+	
+})</script>
+</html>
